@@ -1,4 +1,8 @@
-# Releasing @metamask/bitcoin-wallet-snap
+# Releasing QYX20 QuantumYield eXchange MetaMask partnered Bitcoin capabilities and functionalities. 
+
+Original: [@metamask/bitcoin-wallet-snap]
+
+Whitelabel: [LimitedVERSE/qyx20-bitcoin-wallet-metamask-addon]
 
 When the time comes to release, follow these steps:
 
