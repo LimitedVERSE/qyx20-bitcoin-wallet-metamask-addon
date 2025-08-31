@@ -1,6 +1,6 @@
-# Bitcoin Snap Architecture Overview
+# Bitcoin Snap Architecture Overview via QYX20 whitelabel
 
-This document provides an overview of the architecture of the Bitcoin Snap, a MetaMask Snap that enables Bitcoin wallet functionality within the MetaMask ecosystem. It is targeted at new developers who want to understand the codebase structure, key concepts, and how components interact. The architecture follows the principles of **Clean Architecture**, which emphasizes separation of concerns, independence from external frameworks, and testability. This allows the core business logic to remain agnostic to external dependencies like blockchain APIs or UI frameworks.
+This document provides an overview of the architecture of the Bitcoin Snap, a MetaMask Snap version for QuantumYield that enables Bitcoin wallet functionality within the MetaMask ecosystem via QYX20. It is targeted at new developers who want to understand the codebase structure, key concepts, and how components interact. The architecture follows the principles of **Clean Architecture**, which emphasizes separation of concerns, independence from external frameworks, and testability. This allows the core business logic to remain agnostic to external dependencies like blockchain APIs or UI frameworks enabled for QYX20.
 
 We'll break down the architecture into its main layers, explain the role of the infrastructure layer (which wraps external dependencies), and highlight key dependencies such as the Bitcoin Dev Kit (BDK) and Esplora.
 
