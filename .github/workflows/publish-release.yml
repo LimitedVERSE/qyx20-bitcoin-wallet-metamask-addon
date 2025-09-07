@@ -31,7 +31,7 @@ jobs:
   publish-release:
     permissions:
       contents: write
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
         with:
@@ -70,7 +70,7 @@ jobs:
           key: ${{ github.sha }}
 
   publish-npm-dry-run:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: publish-release
     steps:
       - uses: actions/checkout@v4
@@ -99,7 +99,7 @@ jobs:
 
   publish-npm:
     environment: npm-publish
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: publish-npm-dry-run
     steps:
       - uses: actions/checkout@v4
