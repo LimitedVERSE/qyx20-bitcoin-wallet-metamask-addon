@@ -6,7 +6,7 @@ on:
 jobs:
   prepare:
     name: Prepare
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
       - name: Enable Corepack
@@ -21,7 +21,7 @@ jobs:
 
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs:
       - prepare
     strategy:
@@ -50,7 +50,7 @@ jobs:
 
   lint:
     name: Lint
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs:
       - prepare
     strategy:
@@ -83,7 +83,7 @@ jobs:
 
   snap-test:
     name: Snap Tests
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs:
       - prepare
     strategy:
@@ -113,7 +113,7 @@ jobs:
 
   integration-test:
     name: Integration Test
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs:
       - prepare
     env:
